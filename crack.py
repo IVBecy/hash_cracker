@@ -36,7 +36,7 @@ time.sleep(3)
 print("\n")
 PASS_LIST = input("Enter the name of the password list:  ")
 print("\n")
-HASH_LIST = input("Enter the name od the hash file:  ")
+HASH_LIST = input("Enter the name of the hash file:  ")
 print("\n")
 HASH_METHOD = input(
     "Enter your hashing algorithm (md5, sha1, sha256, sha512, sha3_256, sha3_512, blake2s, blake2b):  ")
