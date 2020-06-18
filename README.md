@@ -1,4 +1,4 @@
-# Password Cracker
+# Hash Cracker
 **Usage:** 
 
 ```py crack.py ```
