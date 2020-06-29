@@ -1,9 +1,14 @@
 # Hash Cracker
+
+**NOTE:** There are 2 versions of the script. **"brute_cracker.py"**, bruteforces the number of characters you enter, **"dic_cracker.py"**, just reads a password file.
+
 **Usage:** 
 
-```py crack.py ```
+```py dic_cracker.py or py brute_cracker.py   ```
 
-```Enter the name of the password list: ``` (Type the name of the file that contains your proper passwords), e.g.: passwords.txt
+```Enter the name of the password list: ``` **ONLY FOR dic_cracker**   (Type the name of the file that contains your proper passwords), e.g.: passwords.txt
+
+```Enter the number of characters, that you would like to use: ``` **ONLY FOR brute_cracker**   (Type the length of the guesses), e.g.: 4
 
 ```Enter the name od the hash file: ``` (Type the name of the file that contains your hashed passwords), e.g.: hashes.txt
 
@@ -13,6 +18,6 @@
 
 ***Hashing algorithms available:*** md5, sha1, sha256, sha512, sha3_256, sha3_512, blake2s, blake2b
 
-Overall, this code will hash all the passwords in your password file, then compare it to the hashes. If there is any match between the two files, it will show it at the end.
+
 
 
