@@ -8,23 +8,30 @@ import itertools
 PASSWORDS = {}
 charset = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-=+!.,'?/#~£$%^&*|")
 
-#### Taking commands ####
-print("\n")
-REPEAT_COUNT = input("Enter the number of characters, that you would like to use:   ")
-print("\n")
-HASH_LIST = input("Enter the name of the hash file:  ")
-print("\n")
-HASH_METHOD = input("Enter your hashing algorithm (md5, sha1, sha256, sha512, sha3_256, sha3_512, blake2s, blake2b):  ")
-print("\n")
-CASE = input("Lower / Upper case hashes [l/u]:")
-print("\n")
-
 #####  Getting the length of the file   #######
 def file_length(fname):
     with open(fname) as f:
         for i, l in enumerate(f):
             pass
         return i + 1
+
+
+# "WATERMARK"
+banner = """ 
+
+-----------------------------------------------
+|---------------------------------------------|
+|             PASSWORD CRACKER                |
+|---------------------------------------------|
+| # Author: IVBecy                            |
+|                                             |
+| # The ULTIMATE Password cracker             |
+|                                             |
+| # Brute Force Attack                        |
+|---------------------------------------------|
+-----------------------------------------------
+
+"""
 
 ########### Function for looping through the charset ######################
 def bruting():
@@ -101,6 +108,23 @@ def bruting():
         PASSWORDS[hashed_passw] = chars
       elif CASE == "u":
         PASSWORDS[hashed_passw.upper()] = chars
+
+
+# Self advertising ;)
+print(banner)
+time.sleep(3)
+#### Taking commands ####
+print("\n")
+REPEAT_COUNT = input(
+    "Enter the number of characters, that you would like to use:   ")
+print("\n")
+HASH_LIST = input("Enter the name of the hash file:  ")
+print("\n")
+HASH_METHOD = input(
+    "Enter your hashing algorithm (md5, sha1, sha256, sha512, sha3_256, sha3_512, blake2s, blake2b):  ")
+print("\n")
+CASE = input("Lower / Upper case hashes [l/u]:")
+print("\n")
 bruting()
 #### Handling the hashes file and looking for any match
 a = 0
