@@ -1,4 +1,5 @@
 # Hash Cracker
+![Hash Cracker](https://kristofhracza.com/Pictures/crack.png)
 
 **NOTE:** There are 2 versions of the script. **"brute_cracker.py"**, bruteforces the number of characters you enter, **"dic_cracker.py"**, just reads a password file.
 
