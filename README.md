@@ -19,6 +19,8 @@
 
 ***Hashing algorithms available:*** md5, sha1, sha256, sha512, sha3_256, sha3_512, blake2s, blake2b
 
+On I how I have made it: https://www.youtube.com/watch?v=CUK_xnebtxA&t
+
 
 
 
