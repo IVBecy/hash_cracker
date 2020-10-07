@@ -5,11 +5,9 @@
 
 **Usage:** 
 
-```py dic_cracker.py or py brute_cracker.py   ```
+```py dic_cracker.py   ```
 
-```Enter the name of the password list: ``` **ONLY FOR dic_cracker**   (Type the name of the file that contains your proper passwords), e.g.: passwords.txt
-
-```Enter the number of characters, that you would like to use: ``` **ONLY FOR brute_cracker**   (Type the length of the guesses), e.g.: 4
+```Enter the name of the password list: ```  (Type the name of the file that contains your proper passwords), e.g.: passwords.txt
 
 ```Enter the name od the hash file: ``` (Type the name of the file that contains your hashed passwords), e.g.: hashes.txt
 
